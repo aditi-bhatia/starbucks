@@ -42,12 +42,7 @@ public class CommandPatternTest
     public void testMyCards()
     {
 
-       pinEntry.number("1");
-        pinEntry.number("2");
-        pinEntry.number("3");
-        pinEntry.number("4");
-        assertEquals("starbucks.FourPinDigits", pinEntry.getCurrentState());
-        
+      
         // Login with pin
 
         // Select Menu "A"
