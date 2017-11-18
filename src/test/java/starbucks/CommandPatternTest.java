@@ -1,6 +1,3 @@
-
-
-
 package starbucks ;
 
 
@@ -41,11 +38,15 @@ public class CommandPatternTest
     @Test
     public void testMyCards()
     {
-
-      
         // Login with pin
+        app.touch(1,5);
+        app.touch(2,5);
+        app.touch(3,5);
+        app.touch(1,6);
+
 
         // Select Menu "A"
+        app.execute("A");
  
         // Assertion
         assertEquals("MyCards", app.screen());            
@@ -55,9 +56,12 @@ public class CommandPatternTest
     public void testPayments()
     {
         // Login with pin
-
+        app.touch(1,5);
+        app.touch(2,5);
+        app.touch(3,5);
+        app.touch(1,6);
         // Select Menu "B"
- 
+        app.execute("B");
         // Assertion
         assertEquals("Payments", app.screen());            
     }
@@ -67,9 +71,12 @@ public class CommandPatternTest
     {
         assertEquals("PinScreen", app.screen());
         // Login with pin
-
+        app.touch(1,5);
+        app.touch(2,5);
+        app.touch(3,5);
+        app.touch(1,6);
         // Select Menu "C"
- 
+ app.execute("C");
         // Assertion 
         assertEquals("Rewards", app.screen());            
     }
@@ -78,9 +85,12 @@ public class CommandPatternTest
     public void testStore()
     {
         // Login with pin
-
+        app.touch(1,5);
+        app.touch(2,5);
+        app.touch(3,5);
+        app.touch(1,6);
         // Select Menu "D"
- 
+        app.execute("D");
         // Assertion 
         assertEquals("Store", app.screen());            
     }
