@@ -186,7 +186,7 @@ public class KeyPadPressTest
         // Press 2
 
         // Assertion (Replace with appropriate test)
-        assertEquals( kp.lastKey(), "_");
+        assertEquals( kp.lastKey(), " ");
     }
 
 
